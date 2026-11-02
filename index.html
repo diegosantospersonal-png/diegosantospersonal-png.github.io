@@ -21,6 +21,7 @@ p{color:#ccc;margin-bottom:16px}
 .b-out{border:2px solid #444;color:#fff}
 section{border-top:1px solid #1e1e1e}
 .card{background:#181818;border:1px solid #2a2a2a;border-radius:18px;padding:20px;margin-bottom:14px}
+.card p{margin-bottom:0}
 .x::before{content:"✕  ";color:#e0343a;font-weight:700}
 .n{font-family:'Bebas Neue';font-size:38px;color:#e0343a;font-style:italic}
 .card h3{font-family:'Bebas Neue';font-style:italic;font-size:26px;color:#fff}
@@ -28,12 +29,12 @@ section{border-top:1px solid #1e1e1e}
 .sub{color:#999;font-size:14px;margin-bottom:10px}
 .ok::before{content:"✓  ";color:#c6f24e}
 .ok{margin:4px 0}
-.hl{border:2px solid #e0343a;position:relative;background:#1c1213}
+.hl{border:2px solid #e0343a;position:relative;background:#1c1213;margin-top:24px}
 .badge{position:absolute;top:-14px;left:18px;background:#e0343a;color:#fff;font-weight:700;font-size:13px;padding:4px 12px;border-radius:20px}
 .foto{width:100%;aspect-ratio:4/5;background:#1a1a1a;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#555;margin-bottom:20px;overflow:hidden}
 .foto img{width:100%;height:100%;object-fit:cover}
 .faq h4{color:#fff;margin-bottom:6px}
-footer{text-align:center;color:#666;font-size:13px;padding:30px}
+footer{text-align:center;color:#666;font-size:13px;padding:30px 30px 100px}
 .fab{position:fixed;right:18px;bottom:18px;background:#25d366;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 4px 14px #0008}
 </style>
 </head>
@@ -61,74 +62,69 @@ footer{text-align:center;color:#666;font-size:13px;padding:30px}
   <div class="tag">Como funciona</div>
   <h2>Simples assim, <span class="red">em 4 passos</span></h2>
   <div class="card"><div class="n">1</div><h3>Escolha o plano</h3><p>Quanto mais tempo, menor o valor por mês.</p></div>
-  2 Faça a anamnese Você conta sua rotina, objetivo e histórico de treino.
-  3 Receba seu treino Montado por mim, pensado pra você.
-  4 Evolua com suporte Dúvidas e acompanhamento direto comigo no WhatsApp.
+  <div class="card"><div class="n">2</div><h3>Faça a anamnese</h3><p>Você conta sua rotina, objetivo e histórico de treino.</p></div>
+  <div class="card"><div class="n">3</div><h3>Receba seu treino</h3><p>Montado por mim, pensado pra você.</p></div>
+  <div class="card"><div class="n">4</div><h3>Evolua com suporte</h3><p>Dúvidas e acompanhamento direto comigo no WhatsApp.</p></div>
+</div></section>
 
+<section><div class="wrap">
+  <div class="foto">Sua foto aqui</div>
+  <div class="tag">Quem monta seu treino</div>
+  <h2>Diego Santos</h2>
+  <p>Personal trainer focado em mulheres que querem perder gordura e ganhar massa muscular. Meu trabalho é fazer você ter resultado de verdade, com treino técnico e feito pra sua rotina.</p>
+</div></section>
 
+<section id="planos"><div class="wrap">
+  <div class="tag">Planos</div>
+  <h2>Escolha <span class="red">como começar</span></h2>
 
-  Sua foto aqui
-  Quem monta seu treino
-  Diego Santos
-  Personal trainer focado em mulheres que querem perder gordura e ganhar massa muscular. Meu trabalho é fazer você ter resultado de verdade, com treino técnico e feito pra sua rotina.
+  <div class="card">
+    <h3>2 meses</h3>
+    <div class="price">R$ 199</div>
+    <div class="sub">R$ 99,50/mês</div>
+    <div class="ok">Treino personalizado</div>
+    <div class="ok">Suporte no WhatsApp</div>
+    <a class="btn b-out" href="https://wa.me/5542999652764?text=Oi%20Diego!%20Quero%20o%20plano%20de%202%20meses" target="_blank">Escolher este</a>
+  </div>
 
+  <div class="card hl">
+    <div class="badge">RECOMENDADO</div>
+    <h3>6 meses</h3>
+    <div class="price">R$ 80/mês</div>
+    <div class="sub">Total R$ 480</div>
+    <div class="ok">Treinos personalizados atualizados</div>
+    <div class="ok">Tempo pra ver transformação de verdade</div>
+    <div class="ok">Suporte no WhatsApp</div>
+    <a class="btn b-red" href="https://wa.me/5542999652764?text=Oi%20Diego!%20Quero%20o%20plano%20de%206%20meses" target="_blank">Quero ser aluna</a>
+  </div>
 
+  <div class="card">
+    <h3>10 meses</h3>
+    <div class="price">R$ 60/mês</div>
+    <div class="sub">Total R$ 600 · menor valor mensal</div>
+    <div class="ok">Treinos personalizados atualizados</div>
+    <div class="ok">Suporte no WhatsApp</div>
+    <a class="btn b-out" href="https://wa.me/5542999652764?text=Oi%20Diego!%20Quero%20o%20plano%20de%2010%20meses" target="_blank">Escolher este</a>
+  </div>
+</div></section>
 
-  Planos
-  Escolha como começar
+<section><div class="wrap faq">
+  <div class="tag">Dúvidas</div>
+  <h2>Perguntas <span class="red">frequentes</span></h2>
+  <div class="card"><h4>Sou iniciante. Serve pra mim?</h4><p>Serve. O treino é montado a partir da sua anamnese, respeitando seu nível.</p></div>
+  <div class="card"><h4>Preciso treinar todos os dias?</h4><p>Não. O treino é montado pra frequência que cabe na sua rotina.</p></div>
+  <div class="card"><h4>Como funciona o suporte?</h4><p>Dúvidas sobre o treino e execução direto comigo no WhatsApp.</p></div>
+</div></section>
 
-  
-    2 meses
-    R$ 199
-    R$ 99,50/mês
-    Treino personalizado
-    Suporte no WhatsApp
-    Escolher este
-  
+<section><div class="wrap">
+  <h2>Chega de treinar <span class="red">sem resultado.</span></h2>
+  <p>Seu próximo treino pode ser o primeiro feito de verdade pra você.</p>
+  <a class="btn b-red" href="#planos">Quero ser aluna</a>
+  <a class="btn b-green" href="https://wa.me/5542999652764?text=Oi%20Diego!%20Tenho%20uma%20d%C3%BAvida%20sobre%20a%20consultoria" target="_blank">Tirar dúvida no WhatsApp</a>
+</div></section>
 
-  
-    RECOMENDADO
-    6 meses
-    R$ 80/mês
-    Total R$ 480
-    Treinos personalizados atualizados
-    Tempo pra ver transformação de verdade
-    Suporte no WhatsApp
-    Quero ser aluna
-  
+<footer>© 2026 Diego Santos · Todos os direitos reservados</footer>
 
-  
-    10 meses
-    R$ 60/mês
-    Total R$ 600 · menor valor mensal
-    Treinos personalizados atualizados
-    Suporte no WhatsApp
-    Escolher este
-  
-
-
-
-  Dúvidas
-  Perguntas frequentes
-  Sou iniciante. Serve pra mim? Serve. O treino é montado a partir da sua anamnese, respeitando seu nível.
-  Preciso treinar todos os dias? Não. O treino é montado pra frequência que cabe na sua rotina.
-  Como funciona o suporte? Dúvidas sobre o treino e execução direto comigo no WhatsApp.
-
-
-
-  Chega de treinar sem resultado.
-  Seu próximo treino pode ser o primeiro feito de verdade pra você.
-  Quero ser aluna
-  Tirar dúvida no WhatsApp
-
-
-© 2026 Diego Santos · Todos os direitos reservados
-💬
-<a class="fab" href="https://wa.me/5542999652764" target="_blank">💬</a>
+<a class="fab" href="https://wa.me/5542999652764" target="_blank" aria-label="Falar no WhatsApp">💬</a>
 </body>
 </html>
-
-
-
-
-
